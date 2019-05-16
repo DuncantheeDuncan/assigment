@@ -1,6 +1,6 @@
 package net.greet;
 
-public class classA {
+public class ClassA {
 //    MUST BE INCLUDED
 //    main method
 //    object of classb
