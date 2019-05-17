@@ -7,4 +7,6 @@ public class Class1 {
 //    the MAIN method (starting point)
 //    the object of class2
 //    should also call the get method count_words(string str)
+
+
 }
