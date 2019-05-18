@@ -1,29 +1,32 @@
 package net.greet;
 
-public class ClassA {
-//    MUST BE INCLUDED
-//    main method
-//    object of classb
-//    void method --name---
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
 
+public class ClassA {
     public static void main(String[] args){
 
+
         ClassB classB = new ClassB();
+        Scanner scanner = new Scanner(System.in);
+        classB.futureInvestmentValue(28000,7,8);
 
-double investment = 28000;
-double mointhly =  7*0.01;
-int years = 6;
-// double answer = investment *Math.pow(1, mointhly) years *12;
-
-        System.out.println(investment * Math.pow(1 + mointhly, years * 12)+" check 2");
-        double full = investment * Math.pow((1 + mointhly/100),years );
-        System.out.println(full + " check");
+        while (true){
+            System.out.println("please enter pv i n or help ");
 
 
-        float invest = (float)(investment * Math.pow(1 + mointhly,years));
-        System.out.println(invest);
-       double k = investment * Math.pow(1 + mointhly,years)  * 12;
-        System.out.println(k + " k");
+
+        }
+
+
+
+
+
+
+
+
+
 
 
     }

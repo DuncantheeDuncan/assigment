@@ -1,14 +1,54 @@
 package net.greet;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class ClassB {
 
     public void futureInvestmentValue(double investmentAmount, double monthlyInterestRate, int years){
 
+        investmentAmount = 28000;
+        double divide = 100d;
+        monthlyInterestRate = 7/divide;
+//        System.out.println(monthlyInterestRate);
+        years = 6;
+
+        double totalInterest = investmentAmount * Math.pow((1 + monthlyInterestRate/12), years*12);
+        double roundedValue = new BigDecimal(totalInterest).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+        System.out.println(roundedValue+" jj");
+
 
     }
 
+    public String getCountWords(String countWords){
+        double  n = 1.2;
+        return countWords;
+    }
+
+//    public static void main(String[] args) {
+//
+//
+//        double pv = 28000;
+//        double interestRate = 7/100d;
+////        System.out.println(interestRate);
+//        int years = 6;
+//
+//        double totalInterest = pv * Math.pow((1 + interestRate/12), years*12);
+//        double roundedValue = new BigDecimal(totalInterest).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+//
+//        System.out.println(roundedValue);
+//    }
+
 
 }
+
+
+
+
+
+
+
+
 //
 //3.1 Write a Java program that will compute the future investment value at a given interest rate for a
 //        specified number of years. The java program should have a minimum of two classes.

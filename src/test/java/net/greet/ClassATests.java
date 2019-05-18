@@ -7,12 +7,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ClassATests {
 
     @Test
-    void Testing(){
+    void TestingFor6years(){
         ClassB classB = new ClassB();
-        classB.futureInvestmentValue(2800,7,6);
+        classB.futureInvestmentValue(28000,7,6);
 
 
-        assertEquals(1,1);
+
+        assertEquals(42562.95,3969388.51);
+
+    }
+@Test
+    void  TestingFor3years(){
+        ClassB classB = new ClassB();
+
+        classB.futureInvestmentValue(2800,7,3);
+        assertEquals(2876.78,8972.0);
 
     }
 
