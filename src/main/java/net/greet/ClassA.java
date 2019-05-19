@@ -1,40 +1,33 @@
 package net.greet;
-
-import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class ClassA {
-//    MUST BE INCLUDED
-//    main method
-//    object of classb
-//    void method --name---
-
     public static void main(String[] args){
-
         ClassB classB = new ClassB();
+        Scanner scanner = new Scanner(System.in);
 
-double investment = 28000;
-double mointhly =  7;
-int years = 6;
-// double answer = investment *Math.pow(1, mointhly) years *12;
+        while (true){
+            System.out.println("please enter pv i n or help \n");
+            double investmentAmount = scanner.nextDouble();
+            double monthlyIntrestRAte =scanner.nextDouble();
+            int years = scanner.nextInt();
+            System.out.println("investment amount: "+ investmentAmount +"\ninterest rate: "+ monthlyIntrestRAte+"\nnumber of years: "+ years);
 
-//        System.out.println(investment * Math.pow(1 + mointhly, years * 12)+" check 2");
+            classB.futureInvestmentValue(investmentAmount, monthlyIntrestRAte,years);
 
-        double full = investment * Math.pow((1 + mointhly/100),years );
-        System.out.println(full );
 
-//
-//        float invest = (float)(investment * Math.pow(1 + mointhly,years));
-//        System.out.println(invest);
-//       double k = investment * Math.pow(1 + mointhly,years)  * 12;
-//        System.out.println(k + " k");
 
-//            double pv = 28000;
-//            double r= 7;
-//            int n = 6;
-//            double fv = Math.pow(pv * (1+(r/100)), n * 12);
-//            String fv2 = String.valueOf(fv);
-//            DecimalFormat decimalFormat = new DecimalFormat("0.00");
-//            System.out.println(decimalFormat.format(fv));
+        }
+
+
+
+
+
+
+
+
+
+
 
     }
 }
