@@ -1,5 +1,7 @@
 package net.greet;
 
+import java.text.DecimalFormat;
+
 public class ClassA {
 //    MUST BE INCLUDED
 //    main method
@@ -11,20 +13,28 @@ public class ClassA {
         ClassB classB = new ClassB();
 
 double investment = 28000;
-double mointhly =  7*0.01;
+double mointhly =  7;
 int years = 6;
 // double answer = investment *Math.pow(1, mointhly) years *12;
 
-        System.out.println(investment * Math.pow(1 + mointhly, years * 12)+" check 2");
+//        System.out.println(investment * Math.pow(1 + mointhly, years * 12)+" check 2");
+
         double full = investment * Math.pow((1 + mointhly/100),years );
-        System.out.println(full + " check");
+        System.out.println(full );
 
+//
+//        float invest = (float)(investment * Math.pow(1 + mointhly,years));
+//        System.out.println(invest);
+//       double k = investment * Math.pow(1 + mointhly,years)  * 12;
+//        System.out.println(k + " k");
 
-        float invest = (float)(investment * Math.pow(1 + mointhly,years));
-        System.out.println(invest);
-       double k = investment * Math.pow(1 + mointhly,years)  * 12;
-        System.out.println(k + " k");
-
+//            double pv = 28000;
+//            double r= 7;
+//            int n = 6;
+//            double fv = Math.pow(pv * (1+(r/100)), n * 12);
+//            String fv2 = String.valueOf(fv);
+//            DecimalFormat decimalFormat = new DecimalFormat("0.00");
+//            System.out.println(decimalFormat.format(fv));
 
     }
 }
