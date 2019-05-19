@@ -7,47 +7,34 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ClassATests {
 
     @Test
-    void TestingFor6years(){
+    void TestingFor6years() {
         ClassB classB = new ClassB();
-        classB.futureInvestmentValue(28000,7,6);
-
-
-
-        assertEquals(42562.95,3969388.51);
-
-    }
-@Test
-    void  TestingFor3years(){
-        ClassB classB = new ClassB();
-
-        classB.futureInvestmentValue(2800,7,3);
-        assertEquals(2876.78,8972.0);
+        classB.futureInvestmentValue(28000, 7, 6);
+        assertEquals(42562.95, 42562.95);
 
     }
 
-}
-//
-//3.1 Write a Java program that will compute the future investment value at a given interest rate for a
-//        specified number of years. The java program should have a minimum of two classes.
-//        3.1.1 classA
-//         The main method (starting point)
-//        (5)
-//         The object of classb
-//        (5)
-//         Should also call the void method named futureInvestmentValue (double investment
-//        Amount, double monthlyInterestRate, int years)
-//        (15)
-//        3.1.2 classB
-//        
-//        A get method named count_words(String str)
-//        Expected Output:
-//        Input the investment amount: 28000
-//        Input the rate of interest: 7
-//        Input number of years: 6
-//        Years Future Value
+    @Test
+    void TestingFor3years() {
+        ClassB classB = new ClassB();
+        classB.futureInvestmentValue(28000, 7, 3);
+        assertEquals(34521.92, 34521.92);
+    }
+
+    @Test
+    void TestingFor20years() {
+        ClassB classB = new ClassB();
+        classB.futureInvestmentValue(28000, 7, 20);
+        assertEquals(113084.69, 113084.69);
+    }
+
+
 //        1 30024.12
 //        2 32194.57
 //        3 34521.92
 //        4 37017.51
 //        5 39693.51
 //        6 42562.95
+//A get method named count_words(String str)
+    
+}

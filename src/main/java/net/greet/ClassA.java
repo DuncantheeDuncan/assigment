@@ -1,19 +1,19 @@
 package net.greet;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class ClassA {
     public static void main(String[] args){
-
-
         ClassB classB = new ClassB();
         Scanner scanner = new Scanner(System.in);
-        classB.futureInvestmentValue(28000,7,8);
 
         while (true){
-            System.out.println("please enter pv i n or help ");
+            System.out.println("please enter pv i n or help \n");
+            double investmentAmount = scanner.nextDouble();
+            double monthlyIntrestRAte =scanner.nextDouble();
+            int years = scanner.nextInt();
+            System.out.println("investment amount: "+ investmentAmount +"\ninterest rate: "+ monthlyIntrestRAte+"\nnumber of years: "+ years);
+
+            classB.futureInvestmentValue(investmentAmount, monthlyIntrestRAte,years);
 
 
 
