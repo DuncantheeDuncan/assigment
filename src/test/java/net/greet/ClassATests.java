@@ -17,7 +17,7 @@ public class ClassATests {
     void TestingFor3years() {
         ClassB classB = new ClassB();
         classB.futureInvestmentValue(28000, 7, 3);
-        assertEquals(34521.92, 34521.92);
+        assertEquals(34521.95, 34521.92);
     }
 
     @Test
