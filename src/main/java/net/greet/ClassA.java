@@ -1,4 +1,5 @@
 package net.greet;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ClassA {
@@ -7,48 +8,18 @@ public class ClassA {
         Scanner scanner = new Scanner(System.in);
 
         while (true){
-            System.out.println("please enter pv i n or help \n");
+            System.out.println("pv\t--> future investment\ni\t--> investment rate\nn\t--> number of years");
+            System.out.println("please enter pv i n  \n");
             double investmentAmount = scanner.nextDouble();
             double monthlyIntrestRAte =scanner.nextDouble();
             int years = scanner.nextInt();
-            System.out.println("investment amount: "+ investmentAmount +"\ninterest rate: "+ monthlyIntrestRAte+"\nnumber of years: "+ years);
+            System.out.println("investment amount: R"+ investmentAmount +"\ninterest rate: "+ monthlyIntrestRAte+"%"+"\nnumber of years: "+ years);
 
             classB.futureInvestmentValue(investmentAmount, monthlyIntrestRAte,years);
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }
-//
-//3.1 Write a Java program that will compute the future investment value at a given interest rate for a
-//        specified number of years. The java program should have a minimum of two classes.
-//        3.1.1 classA
-//         The main method (starting point)
-//        (5)
-//         The object of classb
-//        (5)
-//         Should also call the void method named futureInvestmentValue (double investment
-//        Amount, double monthlyInterestRate, int years)
-//        (15)
-//        3.1.2 classB
-//        
 //        A get method named count_words(String str)
-//        Expected Output:
-//        Input the investment amount: 28000
-//        Input the rate of interest: 7
-//        Input number of years: 6
 //        Years Future Value
 //        1 30 024.12
 //        2 32 194.57

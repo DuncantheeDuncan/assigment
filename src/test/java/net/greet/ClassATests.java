@@ -11,7 +11,6 @@ public class ClassATests {
         ClassB classB = new ClassB();
         classB.futureInvestmentValue(28000, 7, 6);
         assertEquals(42562.95, 42562.95);
-
     }
 
     @Test
@@ -35,6 +34,6 @@ public class ClassATests {
 //        4 37017.51
 //        5 39693.51
 //        6 42562.95
-//A get method named count_words(String str)
+
     
 }

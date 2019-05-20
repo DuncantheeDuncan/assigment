@@ -1,12 +1,15 @@
 package net.greet;
 
+import java.util.Scanner;
+
 public class Class1 {
-
-//    --------------------THIS MUST BE CONTAINED IN THIS CLASS--------------
-
-//    the MAIN method (starting point)
-//    the object of class2
-//    should also call the get method count_words(string str)
-
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            System.out.println("\nType in a sentence or words to count the number of words given  or exit");
+            String words =scanner.nextLine();
+            Class2 class2 = new Class2(words);
+            class2.getCount_words();
+        }
+    }
 }
