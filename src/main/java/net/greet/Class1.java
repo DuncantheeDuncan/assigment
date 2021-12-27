@@ -9,7 +9,7 @@ public class Class1 {
             System.out.println("\nType in a sentence or words to count the number of words given  or exit");
             String words =scanner.nextLine();
             Class2 class2 = new Class2(words);
-            class2.getCount_words();
+            class2.getCount_words();// calling the getCountWords from class2
         }
     }
 }

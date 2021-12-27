@@ -10,6 +10,12 @@ public class Class2 {
         }else {
             String[] wordsArray = words.split(" ");
             System.out.println(words.toUpperCase() +": Has (".toUpperCase()+wordsArray.length+") words".toUpperCase());
+            /*
+            * the reason the above line is equated to wordsOfArray alone
+            * it because i have set the var Words to String
+            * therefore i cannot return var wordsOfArray with the
+            * .length method because it returns a an Integer
+            * */
             this.words = String.valueOf(wordsArray.length);
         }
     }

@@ -8,12 +8,12 @@ public class ClassB {
     public void futureInvestmentValue( double investmentAmount, double monthlyInterestRate, int years){
 
         try {
-            for (int i = 1; i <=years; i++){//bug
+            for (int i = 1; i <=years;i++ ){
                 monthlyInterestRate = monthlyInterestRate/100d;
                 double totalInterest = investmentAmount * Math.pow((1 + monthlyInterestRate/12), years*12);
                 double roundedValue = new BigDecimal(totalInterest).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
                 System.out.println(i + " "+ roundedValue);
-                System.out.println(totalInterest);
+
             }
 
         }catch (Exception e){
